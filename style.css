@@ -9,6 +9,11 @@ a p {
   text-decoration: none;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --main-color: linear-gradient(
     90deg,
@@ -140,7 +145,6 @@ h2 {
 
 .grid-container-main {
   display: flex;
-
   justify-content: center;
   background: var(--main-color);
   margin: 0 auto;
@@ -291,7 +295,40 @@ p {
 }
 
 @media (max-width: 450px) {
-  .navbar a {
-    color: aqua;
+  .navbar-logo img {
+    max-width: 35px;
+    margin-left: 5px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .navbar-main {
+    margin-right: 0px;
+  }
+
+  .Hero a {
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    padding: 10px;
+  }
+
+  .grid-item {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    margin-top: 85px;
+    box-shadow: 10px 5px 5px black;
   }
 }
