@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fixed Navbar</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        z-index: 2000;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .content {
+        margin-top: 70px; /* גובה ה-navbar */
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">בית</a></li>
+        <li><a href="#">שירותים</a></li>
+        <li><a href="#">צור קשר</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <p>הרבה תוכן כאן...</p>
+      <p style="height: 2000px">גלול למטה כדי לראות אם ה-navbar נשאר למעלה</p>
+    </div>
+  </body>
+</html>

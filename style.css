@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a p {
+  text-decoration: none;
+}
+
+:root {
+  --main-color: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 300px;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  z-index: 2000;
+  padding: 10px;
+}
+
+.navbar-logo img {
+  max-width: 40px;
+  height: auto;
+  margin-left: 20px;
+  background-color: aliceblue;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-main {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar-main a {
+  color: white;
+  margin-right: 20px;
+  transition: color 0.3s;
+  font-size: large;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar-main a:hover {
+  color: blue;
+}
+
+.logo {
+  background-color: aliceblue;
+  margin-bottom: 50px;
+  box-shadow: 10px 5px 5px black;
+}
+
+.Hero h1,
+h2 {
+  margin-bottom: 20px;
+}
+.Hero h1 {
+  font-size: 40px;
+}
+
+.Hero a {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+  border: 3px solid rgb(2, 16, 25);
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.Hero-About p {
+  color: white;
+  line-height: 1.2;
+}
+
+.Hero a:hover {
+  background: var(--main-color);
+  color: white;
+}
+
+.Hero-main {
+  height: 100vh;
+  background: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.opening {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.3em;
+  background: var(--main-color);
+}
+
+.parg {
+  margin: 50px;
+  color: white;
+  max-width: 800px;
+  font-size: 20px;
+  padding: 30px;
+  font-family: "Merriweather", sans-serif;
+}
+
+.grid-container-main {
+  display: flex;
+
+  justify-content: center;
+  background: var(--main-color);
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 20px;
+  height: 900px;
+  align-items: stretch;
+}
+
+.grid-item {
+  background-color: #e6ecf5;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: 400px;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 10px 5px 5px black;
+}
+.grid-item img {
+  top: 0;
+}
+.grid-item li {
+  margin-bottom: 20px;
+}
+.grid-item h2 {
+  color: black;
+  margin-top: 5px;
+}
+
+.grid-item a,
+p {
+  color: black;
+}
+.grid-item p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
+  background-color: #333;
+  border-radius: 16px;
+  border: 3px solid black;
+}
+.grid-item ul {
+  color: black;
+  font-size: 18px;
+
+  margin-top: auto;
+}
+
+.grid-item:hover a,
+.grid-item:hover p,
+.grid-item:hover h2,
+.grid-item:hover ul {
+  color: white;
+}
+
+.grid-item:hover {
+  background: var(--main-color);
+}
+
+.animated-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.animated-card:hover {
+  transform: translatey(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.form-main h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: white;
+}
+.form-main p {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#contact-form {
+  background: var(--main-color);
+}
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin-top: 10px;
+}
+
+.form-group input {
+  max-width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+.form-group textarea {
+  max-width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+  height: 200px;
+}
+
+.form-group label {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  border: 3px solid black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: orange;
+}
+
+#main-footer {
+  padding: 20px;
+  text-align: center;
+  background-color: gray;
+}
+#main-footer p {
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 450px) {
+  .navbar a {
+    color: aqua;
+  }
+}
